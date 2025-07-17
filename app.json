@@ -1,23 +1,20 @@
 {
-  "name": "Telegram Username Checker Bot",
-  "description": "Bot Telegram untuk generate dan cek ketersediaan username.",
+  "name": "Username Checker Bot",
+  "description": "Cek username Telegram otomatis via bot",
   "repository": "https://github.com/STEVANOEZ/jagoan",
-  "keywords": ["telegram", "bot", "username", "checker"],
   "env": {
     "BOT_TOKEN": {
-      "description": "Token dari @BotFather",
+      "description": "Token dari BotFather",
       "required": true
     }
   },
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "Basic"
     }
   },
   "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
+    { "url": "heroku/python" }
   ]
 }
